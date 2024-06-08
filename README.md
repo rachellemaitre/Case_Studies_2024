@@ -1,14 +1,14 @@
 # Case_Studies_2024
 
-# project description
+## Project description
 Case Studies repository for analyzing open source fMRI data.
 
 To run this project, you will need to install the following dependencies:
-# Python Standard Libraries
+## Python Standard Libraries
 - os
 - glob
 
-# Python External Libraries
+## Python External Libraries
 - numpy: `pip install numpy`
 - pandas: `pip install pandas`
 - nibabel: `pip install nibabel`
