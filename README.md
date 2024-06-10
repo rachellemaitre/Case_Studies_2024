@@ -10,7 +10,7 @@ Link to the dataset: https://openneuro.org/datasets/ds002785/versions/2.0.0
 
 For our analysis, we used preprocessed BOLD files from the PIOP1 dataset. These files have been processed using the fMRIPrep pipeline, which includes several preprocessing steps to prepare the data for analysis. The preprocessing steps typically include motion correction, spatial normalization to a standard brain template (MNI152NLin2009cAsym), and other adjustments to improve data quality and compatibility for further analysis.
 
-First-level analysis was performed using Pyhon, second-level analysis was performed using R & Rstudio. 
+First-level analysis was conducted using Python, while second-level analysis was performed using R and RStudio.
 
 ## AWSCLI Installation and File Download 
 Detailed instructions for downloading the data using AWS CLI are provided:
