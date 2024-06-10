@@ -1,6 +1,6 @@
 # Case_Studies_2024
 
-## Project description
+## Project Description
 Case Studies repository for analyzing open source fMRI data.
 
 ## Dataset 
