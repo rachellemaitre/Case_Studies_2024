@@ -1,6 +1,7 @@
 # Load necessary library
 library(dplyr)
 library(interactions)
+library(sjPlot)
 
 # BEGIN PREPROCESSING
 ## Load amygdala activation values
@@ -150,7 +151,9 @@ full_df_fmri <- read.csv("C:/Users/Asus/Desktop/fmri/trial_by_trial_amygdala.csv
 second_level_model_interaction <- lm(average_activation ~ RT + gender + gender:RT, data = full_df_fmri)
 summary(second_level_model_interaction)
 
-# plot interaction effect 
+# plot effects
+plot_model(second_level_model_interaction, type = "pred", terms = "RT")
+plot_model(second_level_model_interaction, type = "pred", terms = "gender")
+
 interact_plot(second_level_model_interaction, pred = RT, modx = gender, interval=TRUE)
-
-
+plot_model(second_level_model_interaction, type = "pred", terms = c("RT", "gender"))
