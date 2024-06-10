@@ -32,3 +32,6 @@ To run this project, you will need to install the following dependencies:
 - nltools: `pip install nltools` (https://github.com/ljchang/nltools)
 - nilearn: `pip install nilearn` (https://github.com/nilearn/nilearn)
 
+## R packages
+- dplyr: `install.packages("dplyr")`
+- interactions: `install.packages("interactions")`
