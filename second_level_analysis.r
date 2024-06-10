@@ -135,7 +135,7 @@ write.csv(all_rt_df_filtered, "C:/Users/Asus/Desktop/fmri/stroop_task/full_df_rt
 ## T-test to test if there is a stroop effect in the RTs
 
 # read in behavioral data
-full_df_beh <- read.csv("C:/Users/Asus/Desktop/fmri/stroop_task/full_df_rt.csv")
+full_df_beh <- read.csv("C:/Users/Asus/Desktop/fmri/stroop_task/trial_by_trial_behavioral.csv")
 
 print(t.test(full_df_beh$mean_incongruent, full_df_beh$mean_congruent, paired = TRUE))
 
@@ -145,7 +145,7 @@ print(t.test(full_df_beh$mean_incongruent, full_df_beh$mean_congruent, paired = 
 # reference is M
 
 # read in full data frame with the fmri data
-full_df_fmri <- read.csv("C:/Users/Asus/Desktop/fmri/full_data_case_studies.csv")
+full_df_fmri <- read.csv("C:/Users/Asus/Desktop/fmri/trial_by_trial_amygdala.csv")
 
 second_level_model_interaction <- lm(average_activation ~ RT + gender + gender:RT, data = full_df_fmri)
 summary(second_level_model_interaction)
